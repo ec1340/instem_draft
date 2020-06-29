@@ -10,7 +10,7 @@ import pic04 from '../assets/images/pic04.jpg'
 
 class Homepage extends React.Component {
     render() {
-        const siteTitle = "Gatsby Starter - Photon";
+        const siteTitle = "STEMbase";
 
         return (
             <Layout>
@@ -20,18 +20,17 @@ class Homepage extends React.Component {
                     <div className="grid-wrapper">
                         <div className="col-6">
                             <header className="major">
-                                <h2>Lorem ipsum dolor adipiscing<br />
-                                amet dolor consequat</h2>
+                                <h2>STEMbase.org is a digital platform created by STEM trainees for trainees at all career stages</h2>
                             </header>
-                            <p>Adipiscing a commodo ante nunc accumsan et interdum mi ante adipiscing. A nunc lobortis non nisl amet vis sed volutpat aclacus nascetur ac non. Lorem curae et ante amet sapien sed tempus adipiscing id accumsan.</p>
+                            <p>We aim to share STEM opportunities and resources (i.e. internships, fellowships, outreach platforms) to increase accessibility to information and opportunities in STEM</p>
                         </div>
-                        <div className="col-6">
+                        {/* <div className="col-6">
                             <span className="image fit"><img src={pic01} alt="" /></span>
-                        </div>
+                        </div> */}
                     </div>
                 </section>
 
-                <section id="two" className="main style2">
+                {/* <section id="two" className="main style2">
                     <div className="grid-wrapper">
                         <div className="col-6">
                             <ul className="major-icons">
@@ -53,8 +52,8 @@ class Homepage extends React.Component {
                             <p>Adipiscing a commodo ante nunc accumsan interdum mi ante adipiscing. A nunc lobortis non nisl amet vis volutpat aclacus nascetur ac non. Lorem curae eu ante amet sapien in tempus ac. Adipiscing id accumsan adipiscing ipsum.</p>
                         </div>
                     </div>
-                </section>
-
+                </section> */}
+{/* 
                 <section id="three" className="main style1 special">
                     <div className="grid-wrapper">
                         <div className="col-12">
@@ -90,9 +89,9 @@ class Homepage extends React.Component {
                         </div>
 
                     </div>
-                </section>
+                </section> */}
 
-                <section id="four" className="main style2 special">
+                {/* <section id="four" className="main style2 special">
                     <div className="container">
                         <header className="major">
                             <h2>Ipsum feugiat consequat?</h2>
@@ -103,7 +102,7 @@ class Homepage extends React.Component {
                             <li><a href="#" className="button">Learn More</a></li>
                         </ul>
                     </div>
-                </section>
+                </section> */}
             </Layout>
         );
     }

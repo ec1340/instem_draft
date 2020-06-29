@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: "Gatsby Starter - Photon",
+    title: "STEMbase",
     author: "Hunter Chang",
-    description: "A Gatsby.js Starter based on Photon by HTML5 UP"
+    description: "STEMbase.org is a digital platform -- created by STEM trainees for trainees at all career stages -- that aims to share STEM opportunities and resources (i.e. internships, fellowships, outreach platforms) to increase accessibility to information and opportunities in STEM."
   },
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -21,4 +21,6 @@ module.exports = {
     'gatsby-plugin-sass',
     'gatsby-plugin-offline'
   ],
+  // pathPrefix: "/reponame",
 }
+
