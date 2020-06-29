@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: "STEMbase",
-    author: "Hunter Chang",
+    author: "Egbert Castro",
     description: "STEMbase.org is a digital platform -- created by STEM trainees for trainees at all career stages -- that aims to share STEM opportunities and resources (i.e. internships, fellowships, outreach platforms) to increase accessibility to information and opportunities in STEM."
   },
   plugins: [
