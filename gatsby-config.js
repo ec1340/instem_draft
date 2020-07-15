@@ -1,8 +1,9 @@
+require('dotenv').config();
 module.exports = {
   siteMetadata: {
-    title: "STEMbase",
-    author: "Egbert Castro",
-    description: "STEMbase.org is a digital platform -- created by STEM trainees for trainees at all career stages -- that aims to share STEM opportunities and resources (i.e. internships, fellowships, outreach platforms) to increase accessibility to information and opportunities in STEM."
+    title: "Gatsby Starter - Photon",
+    author: "Hunter Chang",
+    description: "A Gatsby.js Starter based on Photon by HTML5 UP"
   },
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -19,8 +20,14 @@ module.exports = {
       },
     },
     'gatsby-plugin-sass',
-    'gatsby-plugin-offline'
+    'gatsby-plugin-offline',
+    {
+			resolve:`gatsby-source-faunadb`,
+			options: {
+				secret: process.env.FAUNADB_SECRET,
+				index: `allResources`,
+				type: 'Resources',
+			}
+		}
   ],
-  pathPrefix: "/reponame",
 }
-
