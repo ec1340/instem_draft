@@ -1,0 +1,22 @@
+type Entry {
+    name : String!
+    description: String!
+    link: String!
+    entrydate : String!
+    lastmodified : String!
+}
+
+type Resource {
+    id: ID!
+    entry: Entry! @relation
+}
+
+type Query {
+    allResources: [Resource]!
+    ResourceById(id: ID!): Resource
+}
+
+type Mutation {
+    createResource(name: String, description: String): Resource @resolver(name: "createResource")
+    deleteResourceById(id: ID!): Resource @resolver(name: "deleteResource")
+}

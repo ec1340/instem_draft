@@ -1,0 +1,28 @@
+type User {
+    username: String! @unique
+    email: String!
+}
+
+type Entry {
+    name : String!
+    entrydate : String!
+    lastmodified : String!
+    author : User! @relation
+}
+
+type Resource {
+    entry: Entry! @relation
+}
+
+
+type Query {
+    allResources: [Resource]!
+    ResourceById(id: ID!): Resource
+}
+
+type Mutation {
+    createResource(name: String, description: String): Resource @resolver(name: "createResource")
+    deleteResourceById(id: ID!): Resource @resolver(name: "deleteResource")
+    createUser(username: String, email: String): User @resolver(name: "createUser")
+    deleteUser(id: ID!): User @resolver(name: "deleteUser")
+}

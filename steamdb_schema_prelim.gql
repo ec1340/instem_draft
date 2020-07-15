@@ -1,0 +1,34 @@
+type Entry {
+    timestamp: String
+    field: String
+    type: String
+    institution: String
+    name: String
+    link: String
+    deadline: String
+    eligibility: String
+    paid: String
+    location: String
+    contact_name: String
+    contect_email: String
+    urm_serve: String
+    urm: String
+    duration: String
+    Citizenship: String
+    description: String
+}
+
+type Resource {
+    id: ID!
+    entry: Entry! @relation
+}
+
+type Query {
+    allResources: [Resource]!
+    ResourceById(id: ID!): Resource
+}
+
+type Mutation {
+    createResource(name: String, description: String): Resource @resolver(name: "createResource")
+    deleteResourceById(id: ID!): Resource @resolver(name: "deleteResource")
+}
